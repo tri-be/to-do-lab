@@ -5,7 +5,7 @@ console.log("Testing, 1, 2, 3!");
 
 $("#add-task-button").click(function() {
     let task = $("#add-task-input").val();
-    if (task == "") {
+    if (task === "") {
         alert("Task cannot be blank.");
     } else {
         $("#to-do-list").append(`<li>${task}</li>`);
