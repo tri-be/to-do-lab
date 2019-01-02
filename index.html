@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>TO-DO APP</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
+    <title>TO-DO APP</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
-<header>
-	<h1>To-Do List</h1>
-</header>
-<!--section 1-->
-<section>
     <header>
-        <h2>Things To Do</h2>
+        <h1>To-Do List</h1>
     </header>
-    <ul id="to-do-list">
-        <li>Thing One</li>
-        <li>Thing Two</li>
-	</ul>
-</section>
-<!--section 2-->
-<section>
-    <header>
-        <h2>Things Done</h2>
-    </header>
-    <ul id="done-list">
-        <li>Thing Three</li>
-        <li>Thing Four</li>
-	</ul>
-</section>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="./app.js"></script>
+    <!-- section 1 -->
+    <section>
+        <header>
+            <h2>Things To Do</h2>
+        </header>
+        <label>New Task</label>
+        <input type="text" id="add-task-input">
+        <!-- make sure the button below is type button and not type submit -->
+        <button type="button" id="add-task-button">Add Task</button>
+        <ul id="to-do-list">
+            <li>Thing One</li>
+            <li>Thing Two</li>
+        </ul>
+    </section>
+    <!-- section 2 -->
+    <section>
+        <header>
+            <h2>Things Done</h2>
+        </header>
+        <ul id="done-list">
+            <li>Thing Three</li>
+            <li>Thing Four</li>
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./app.js"></script>
 </body>
+
 </html>
